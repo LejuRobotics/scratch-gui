@@ -19,6 +19,9 @@ import translateInsetIconURL from './translate/translate-small.png';
 import makeymakeyIconURL from './makeymakey/makeymakey.png';
 import makeymakeyInsetIconURL from './makeymakey/makeymakey-small.svg';
 
+import helloworldImage from './Scratch3HelloWorldBlocks/Scratch3HelloWorldBlocks.png';
+import helloworldInsetImage from './Scratch3HelloWorldBlocks/helloworld.png';
+
 import microbitIconURL from './microbit/microbit.png';
 import microbitInsetIconURL from './microbit/microbit-small.svg';
 import microbitConnectionIconURL from './microbit/microbit-illustration.svg';
@@ -116,6 +119,28 @@ export default [
                 defaultMessage="Make your projects talk."
                 description="Description for the Text to speech extension"
                 id="gui.extension.text2speech.description"
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Hello world "
+                description="Hello world demo"
+                id="gui.extension.Scratch3HelloWorldBlocks.name"
+            />
+        ),
+        extensionId: 'Scratch3HelloWorldBlocks',
+        collaborator: 'Leju Robotics',
+        iconURL: helloworldImage,
+        insetIconURL: helloworldInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Leju robotics hello world demo."
+                description="Description for the Text to speech extension"
+                id="gui.extension.Scratch3HelloWorldBlocks.description"
             />
         ),
         featured: true,
