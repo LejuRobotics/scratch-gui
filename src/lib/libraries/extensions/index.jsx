@@ -296,25 +296,34 @@ export default [
         internetConnectionRequired: true
     },
     {
-        name: (
-            <FormattedMessage
-                defaultMessage="Leju Robotics Pando"
-                description="Hi Pando robot"
-                id="gui.extension.pandoRobot.name"
-            />
-        ),
+        name: 'Leju Robotics Pando Robot',
         extensionId: 'pandoRobot',
         collaborator: 'Leju Robotics',
         iconURL: pandorobotImage,
         insetIconURL: pandorobotInsetImage,
         description: (
             <FormattedMessage
-                defaultMessage="Leju Robotics Pando robot."
-                description="Description for the Pando robot"
+                defaultMessage="Build with motors and sensors."
+                description="Description for the 'Pando robot' extension"
                 id="gui.extension.pandoRobot.description"
             />
         ),
         featured: true,
-        internetConnectionRequired: true
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: true,
+        connectionIconURL: wedo2ConnectionIconURL,
+        connectionSmallIconURL: wedo2ConnectionSmallIconURL,
+        connectionTipIconURL: wedo2ConnectionTipIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their Pando."
+                id="gui.extension.pandoRobot.connectingMessage"
+            />
+        ),
+        helpLink: 'https://scratch.mit.edu/wedo'
     }
 ];
