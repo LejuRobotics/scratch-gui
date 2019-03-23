@@ -22,6 +22,9 @@ import makeymakeyInsetIconURL from './makeymakey/makeymakey-small.svg';
 import helloworldImage from './Scratch3HelloWorldBlocks/Scratch3HelloWorldBlocks.png';
 import helloworldInsetImage from './Scratch3HelloWorldBlocks/helloworld.png';
 
+import pandorobotImage from './pando/lejuPando.png';
+import pandorobotInsetImage from './pando/pando.png';
+
 import microbitIconURL from './microbit/microbit.png';
 import microbitInsetIconURL from './microbit/microbit-small.svg';
 import microbitConnectionIconURL from './microbit/microbit-illustration.svg';
@@ -290,6 +293,28 @@ export default [
         featured: true,
         disabled: true,
         bluetoothRequired: true,
+        internetConnectionRequired: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Leju Robotics Pando"
+                description="Hi Pando robot"
+                id="gui.extension.pandoRobot.name"
+            />
+        ),
+        extensionId: 'pandoRobot',
+        collaborator: 'Leju Robotics',
+        iconURL: pandorobotImage,
+        insetIconURL: pandorobotInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Leju Robotics Pando robot."
+                description="Description for the Pando robot"
+                id="gui.extension.pandoRobot.description"
+            />
+        ),
+        featured: true,
         internetConnectionRequired: true
     }
 ];
